@@ -282,7 +282,7 @@ def main():
     ##n results by ensembling 1 to n models  
     print("\n\n ENSEMBLING AND SUBMISSION PROCESSES HAVE BEEN STARTED \n")
     with timer("Ensembling and submission"):
-        for i in np.arange(1,n+1):
+        for i in np.arange(1,n+1)[::-1]:
             votingC=ensembling(accuracies,best_estimators,x_train, x_val, y_train, y_val,i)         
             submission(votingC, test,i)
         
