@@ -7,10 +7,8 @@ import numpy as np
 import pandas as pd
 
 # to ignore warnings:
-import warnings,os,sys
-if not sys.warnoptions:
-    warnings.simplefilter("ignore")
-    os.environ["PYTHONWARNINGS"] = "ignore" 
+import warnings
+warnings.filterwarnings('ignore')
 
 # to display all columns:
 pd.set_option('display.max_columns', None)
@@ -151,7 +149,6 @@ def feature_engineering(train, test):
 
 
 # Modeling, Evaluation and Model Tuning
-
 def modelling(train):
     print("\n\nMODELLING PROCESS HAS BEEN STARTED \n")
     ##inner train and validation set split of the given train set
