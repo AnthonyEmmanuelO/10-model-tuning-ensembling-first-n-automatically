@@ -7,8 +7,11 @@ import numpy as np
 import pandas as pd
 
 # to ignore warnings:
-import warnings
-warnings.filterwarnings('ignore')
+import sys
+if not sys.warnoptions:
+    import os, warnings
+    warnings.simplefilter("ignore")
+    os.environ["PYTHONWARNINGS"] = "ignore"
 
 # to display all columns:
 pd.set_option('display.max_columns', None)
