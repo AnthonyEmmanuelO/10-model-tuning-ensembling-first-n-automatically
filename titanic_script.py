@@ -1,4 +1,4 @@
-### This script is going to tune 10 models and ensemmble maximum user selected n number 
+### This script is going to tune 10 models and ensemble maximum (user selected) n number 
 #### of them according to their cross validation scores:
 
 ### Importing Libraries
@@ -267,7 +267,7 @@ def submission(votingC, test,j):
 def main():
     j=1
     n=inp('Enter the maximum number of models to be ensembled (1-10): ')
-    print('This model is going to tune and ensemmble maximum',n,
+    print('This model is going to tune and ensemble maximum',n,
           'models among the following models according to their cross validation scores:' '\n' )
     for i in names:
         print(j,'-',i)
