@@ -1,5 +1,5 @@
-# Titanic-10-model-tuning-ensembling-first-n-automatically
- Using Titanic data predicts survival probabilities of the passengers through model tuning and ensembling. You just need to input how many models you want to ensemble out of 10 classificiation models given below. It ensembles the best n models according to their cross validation accuracies for the validation set and gives n submission files (ensembled from 1 to n models) for the survival probabilities by using the tuned and ensembled models.
+# 10-model-tuning-ensembling-first-n-automatically
+Predicts survival probabilities of the passengers through model tuning and ensembling. You just need to input how many models you want to ensemble out of 10 classificiation models given below. It ensembles the best n models according to their cross validation accuracies for the validation set and gives n submission files (ensembled from 1 to n models) for the survival probabilities by using the tuned and ensembled models.
  
 1 - LogisticRegression
 
